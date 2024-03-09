@@ -1,8 +1,5 @@
-import dotenv from "dotenv";
 import { USERMODEL } from "./model/userModel.js";
 import { Database } from "./config/database.js";
-
-dotenv.config();
 
 const MONGODB_URI = "ADD YOUR MONGODB URI HERE";
 
