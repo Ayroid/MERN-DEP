@@ -23,7 +23,9 @@ const databasePopulate = async () => {
         number: user.number,
       });
 
-      await newUser.save();
+      await newUser.save().then(() => {
+        console.log("User added: ", user.username);
+      });
     } catch (err) {
       console.log(err);
     }
