@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
+import viteLogo from "../public/vite.svg";
 import "./App.css";
 
 import axios from "axios";
@@ -47,7 +47,7 @@ function App() {
           <img src={reactLogo} className="logo react" alt="React logo" />
         </a>
       </div>
-      <h1>{`Hello ${data.username}`}</h1>
+      <h1>{`Greetings ${data.username}`}</h1>
     </>
   );
 }

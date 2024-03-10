@@ -1,0 +1,19 @@
+version: "3.8"
+
+services:
+  backend:
+    image: ayroid/mern-backend
+    container_name: mernbackend
+    ports:
+      - "3000:3000"
+    environment:
+      - MONGODB_URI=mongodb+srv://dummy:dummy@dummy.hjowjq7.mongodb.net/
+      - PORT=3000
+
+  frontend:
+    image: ayroid/mern-frontend
+    container_name: mernfrontend
+    ports:
+      - "80:80"
+    environment:
+      - VITE_SERVER_URL="http://65.2.75.64:3000"
